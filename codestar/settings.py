@@ -30,8 +30,12 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-thiago23-djangoblog-ahg70ikyp58.ws.codeinstitute-ide.net']
-ALLOWED_HOSTS = ['tgo-djangoblog-81ebf63cf659.herokuapp.com', 'tgo-djangoblog']
+ALLOWED_HOSTS = [
+    '8000-thiago23-djangoblog-ahg70ikyp58.ws.codeinstitute-ide.net',
+    'tgo-djangoblog-81ebf63cf659.herokuapp.com',
+    'tgo-djangoblog'
+]
+
 
 
 # Application definition
@@ -45,6 +49,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'blog',
 ]
 
